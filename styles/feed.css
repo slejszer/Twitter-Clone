@@ -1,0 +1,74 @@
+.feed {
+    height: 100vh;
+    width: 600px;
+    overflow: scroll;
+}
+
+.tweet {
+    width: calc(100% - 1px);
+    min-height: 150px;
+
+    font-size: 18px;
+    text-wrap: wrap;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-bottom: 1px solid rgb(240, 240, 240);
+    border-right: 1px solid rgb(240, 240, 240);
+}
+
+.tweet-content {
+    display: flex;
+}
+
+.tweet .account-info {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.tweet .usertag {
+    margin-top: 0;
+    margin-left: 5px;
+}
+
+.tweet .pfp-container {
+    width: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.tweet .pfp {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.tweet .account-info {
+    justify-content: left;
+}
+
+.tweet-buttons {
+    height: 40px;
+    margin-top: 30px;
+    display: flex;
+}
+
+.tweet-buttons img {
+    width: 30px;
+}
+
+.like-button, .share-button {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.like-button:hover, .share-button:hover {
+    cursor: pointer;
+    background-color: aliceblue;
+}

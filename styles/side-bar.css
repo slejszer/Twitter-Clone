@@ -1,0 +1,138 @@
+.side-bar {
+    width: 280px;
+    height: calc(100vh - padding);
+    padding-bottom: 20px;
+    padding-top: 5px;
+    border-right: 1px solid rgb(240, 240, 240);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    overflow: scroll;
+}
+
+@media (max-height: 810px) {
+    .side-bar .nav9 {
+        display: none;
+    }
+}
+
+@media (max-height: 750px) {
+    .side-bar .nav8 {
+        display: none;
+    }
+}
+
+@media (max-height: 700px) {
+    .side-bar .nav7 {
+        display: none;
+    }
+}
+
+@media (max-height: 650px) {
+    .side-bar .nav6 {
+        display: none;
+    }
+}
+
+
+.side-bar img {
+    width: 30px;
+    vertical-align: top;
+    object-fit: contain;
+}
+
+.side-bar .bookmark-icon {
+    width: 25px;
+    margin-left: 2px;
+}
+
+.twitter-logo-container {
+    display: inline-block;
+    margin-left: 4px;
+
+    border-radius: 30px;
+    padding: 3px;
+
+    transition: background-color 0.15s;
+}
+
+.twitter-logo-container:hover {
+    background-color: rgba(0, 0, 0, 0.075);
+    cursor: pointer;
+} 
+
+.twitter-logo-container .twitter-logo {
+    width: 45px;
+}
+
+.side-bar-navigation {
+    display: flex;
+    cursor: pointer;
+}
+
+.side-bar-navigation-button {
+    display: flex;
+    align-items: center;
+    padding: 12px 30px 12px 0;
+    border-radius: 20px;
+    transition: background-color 0.15s;
+}
+
+.side-bar-navigation:hover
+ .side-bar-navigation-button {
+    background-color: rgba(0, 0, 0, 0.075);
+}
+
+.side-bar-navigation-button div {
+    font-size: 22px;
+    margin-left: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    max-width: 180px;
+}
+
+.posting-button {
+    color: white;
+    background-color: black;
+    transition: background-color 0.15s;
+
+    border: none;
+    border-radius: 40px;
+    padding: 15px 60px;
+    margin-top: 10px;
+
+    font-size: 20px;
+}
+
+.posting-button:hover {
+    background-color: rgb(39, 44, 48);
+    cursor: pointer;
+}
+
+.account-info .pfp {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.account-info-user {
+    margin-left: 10px;
+}
+
+.username {
+    font-weight: bold;
+}
+
+.usertag {
+    margin-top: 3px;
+    color: rgb(88, 88, 88);
+}
+
+.user-info-container {
+    display: flex;
+}
+
